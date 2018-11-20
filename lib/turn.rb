@@ -26,4 +26,9 @@ end
 #add a new token to the board as long as the move is valid
 def move(board, input, token="X")
   index = input_to_index(input)
+  if valid_move?(board, index)
+    board[index] = token
+  else
+    print "invalid move"
+  end
 end
