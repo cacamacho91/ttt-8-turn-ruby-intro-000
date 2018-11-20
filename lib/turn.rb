@@ -36,5 +36,10 @@ end
 #handles logic for turns
 def turn(board)
   puts "Please enter 1-9:"
-  input = input_to_index(gets.chomp)
+  index = input_to_index(gets.chomp)
+  if valid_move?(index)
+    puts"VALID!"
+  else
+    puts"INVALID"
+  end
 end
