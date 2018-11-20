@@ -10,5 +10,5 @@ end
 #converts users input to an integer
 def input_to_index(input)
   input = input.strip.to_i
-  input -1
+  input =- 1
 end
