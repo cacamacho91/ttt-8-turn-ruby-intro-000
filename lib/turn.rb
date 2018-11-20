@@ -13,7 +13,7 @@ def input_to_index(input)
   input - 1
 end
 
-#returns true if move is valid, false if not
+#returns true if move is valid (within range and unoccupied), false if not
 def valid_move?(board, index)
   !position_taken?(board, index) && index.between?(0,8)
 end
@@ -21,4 +21,9 @@ end
 #returns true if position taken, false if position is free
 def position_taken?(board, index)
   !(board[index] == "" || board[index] == " " || board[index] == nil)
+end
+
+#add a new token to the board as long as the move is valid
+def move(board, input, token="X")
+  index = input_to_index(input)
 end
