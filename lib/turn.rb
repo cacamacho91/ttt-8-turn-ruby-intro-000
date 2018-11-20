@@ -40,6 +40,7 @@ def turn(board)
     move(board, index)
     display_board(board)
   else
+    print "invalid move"
     turn(board)
   end
 end
