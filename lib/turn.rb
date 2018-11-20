@@ -15,7 +15,7 @@ end
 
 #returns true if move is valid, false if not
 def valid_move?(board, index)
-  position_taken?(board, index) == false && index.between?(0,8)
+  !position_taken?(board, index) && index.between?(0,8)
 end
 
 #returns true if position taken, false if position is free
