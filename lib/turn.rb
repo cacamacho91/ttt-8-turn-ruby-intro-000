@@ -14,10 +14,10 @@ def input_to_index(input)
 end
 
 #returns true if move is valid, false if not
- 
+
 
 
 #returns true if position taken, false if position is free
 def position_taken?(board, index)
-  !(board[index] ="" || board[index] = " " || board[index] = nil)
+  !(board[index] = "" || board[index] = " " || board[index] = nil)
 end
