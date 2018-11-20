@@ -20,5 +20,5 @@ end
 
 #returns true if position taken, false if position is free
 def position_taken?(board, index)
-  !(board[index] = "" || board[index] = " " || board[index] = nil)
+  !(board[index] == "" || board[index] == " " || board[index] == nil)
 end
