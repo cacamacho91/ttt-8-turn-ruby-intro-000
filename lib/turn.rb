@@ -40,6 +40,6 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index)
   else
-    puts"INVALID"
+    turn(board)
   end
 end
