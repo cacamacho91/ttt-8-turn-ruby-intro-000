@@ -32,3 +32,7 @@ def move(board, input, token="X")
     print "invalid move"
   end
 end
+
+#handles logic for turns
+def turn(board)
+end
