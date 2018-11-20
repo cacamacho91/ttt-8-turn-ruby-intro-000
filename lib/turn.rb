@@ -25,11 +25,7 @@ end
 
 #add a new token to the board as long as the move is valid
 def move(board, index, token="X")
-#  if valid_move?(board, index)
     board[index] = token
-#  else
-  #  print "invalid move"
-#  end
 end
 
 #handles logic for turns
